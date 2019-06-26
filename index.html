@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header group-element">
+      <h2>RIFT 6⭐ Calculator</h2>
+    </div>
+    <!-- <div class="center">
+      <h3>Select your Champion</h3>
+      <select name="" id="champion-select">
+        <option value="5">5 ★</option>
+        <option value="4">4 ★</option>
+        <option value="3">3 ★</option>
+        <option value="2">2 ★</option>
+      </select>
+    </div> -->
+    <div class="center">
+      <h3>You have the following fodder</h3>
+      <div class="input-group">
+        <div class="flex-group">
+          <span class="group-element group-badge">2★</span>
+          <input type="number" class="group-input" id="users2star" placeholder="0" min="0" max="300">
+        </div>
+        <div class="flex-group">
+          <span class="group-element group-badge">3★</span>
+          <input type="number" class="group-input" id="users3star" placeholder="0" min="0" max="100">
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="flex-group">
+          <span class="group-element group-badge">4★</span>
+          <input type="number" class="group-input" id="users4star" placeholder="0" min="0" max="25">
+        </div>
+        <div class="flex-group">
+          <span class="group-element group-badge">5★</span>
+          <input type="number" class="group-input" id="users5star" placeholder="0" min="0" max="5">
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <h3>You will still need</h3>
+      <div class="flex-group">
+        <span class="group-element group-badge">2★</span>
+        <span class="group-element group-output smaller-text" id="output2star">300</span>
+        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
+        <span class="group-element group-output smaller-text" id="max2stars">100</span>
+      </div>
+      <div class="flex-group">
+        <span class="group-element group-badge">3★</span>
+        <span class="group-element group-output smaller-text" id="output3star">100</span>
+        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
+        <span class="group-element group-output smaller-text" id="max3stars">25</span>
+      </div>
+      <div class="flex-group">
+        <span class="group-element group-badge">4★</span>
+        <span class="group-element group-output smaller-text" id="output4star">25</span>
+        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
+        <span class="group-element group-output smaller-text" id="max4stars">5</span>
+      </div>
+      <div class="flex-group">
+        <span class="group-element group-badge">5★</span>
+        <span class="group-element group-output smaller-text" id="output5star">5</span>
+        <span class="group-element max-lvl-text smaller-text bigger">and your Champion on max lvl</span>
+        <!-- <span class="group-element group-output smaller-text" id="max5stars">0</span> -->
+      </div>
+    </div>
+    <div class="center bot">
+      <footer class="smaller-text">
+        by <a href="#">matizBrave</a>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
