@@ -9,78 +9,86 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>RAID 6⭐ Calculator</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="header group-element">
-      <h2>RIFT 6⭐ Calculator</h2>
-    </div>
-    <!-- <div class="center">
-      <h3>Select your Champion</h3>
-      <select name="" id="champion-select">
-        <option value="5">5 ★</option>
-        <option value="4">4 ★</option>
-        <option value="3">3 ★</option>
-        <option value="2">2 ★</option>
-      </select>
-    </div> -->
-    <div class="center">
+    <h2>RAID 6⭐ Calculator</h2>
+
+    <!-- User input section -->
+    <div class="wrapper">
       <h3>You have the following fodder</h3>
-      <div class="input-group">
-        <div class="flex-group">
-          <span class="group-element group-badge">2★</span>
-          <input type="number" class="group-input" id="users2star" placeholder="0" min="0" max="300">
+      <div class="wrapper space-between">
+        <div class="group input-group">
+          <div class="badge">2★</div>
+          <input type="number" id="users2star" placeholder="0" min="0" max="300">
         </div>
-        <div class="flex-group">
-          <span class="group-element group-badge">3★</span>
-          <input type="number" class="group-input" id="users3star" placeholder="0" min="0" max="100">
+        <div class="group input-group">
+          <div class="badge">3★</div>
+          <input type="number" id="users3star" placeholder="0" min="0" max="100">
         </div>
       </div>
-      <div class="input-group">
-        <div class="flex-group">
-          <span class="group-element group-badge">4★</span>
-          <input type="number" class="group-input" id="users4star" placeholder="0" min="0" max="25">
+      <div class="wrapper space-between">
+        <div class="group input-group">
+          <div class="badge">4★</div>
+          <input type="number" id="users4star" placeholder="0" min="0" max="25">
         </div>
-        <div class="flex-group">
-          <span class="group-element group-badge">5★</span>
-          <input type="number" class="group-input" id="users5star" placeholder="0" min="0" max="5">
+        <div class="group input-group">
+          <div class="badge">5★</div>
+          <input type="number" id="users5star" placeholder="0" min="0" max="5">
         </div>
       </div>
     </div>
-    <div class="center">
+
+    <!-- output -->
+    <div class="wrapper">
       <h3>You will still need</h3>
-      <div class="flex-group">
-        <span class="group-element group-badge">2★</span>
-        <span class="group-element group-output smaller-text" id="output2star">300</span>
-        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
-        <span class="group-element group-output smaller-text" id="max2stars">100</span>
+      <div class="group output-group">
+        <div class="badge">2★</div>
+        <div class="output-inner-group">
+          <span class="output" id="output2star">300</span>
+          <div class="maxlvl-group">
+            <span class="maxlvl">on max lvl:</span>
+            <span class="output" id="max2stars">100</span>
+          </div>
+        </div>
       </div>
-      <div class="flex-group">
-        <span class="group-element group-badge">3★</span>
-        <span class="group-element group-output smaller-text" id="output3star">100</span>
-        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
-        <span class="group-element group-output smaller-text" id="max3stars">25</span>
+      <div class="group output-group">
+        <div class="badge">3★</div>
+        <div class="output-inner-group">
+          <span class="output" id="output3star">100</span>
+          <div class="maxlvl-group">
+            <span class="maxlvl">on max lvl:</span>
+            <span class="output" id="max3stars">25</span>
+          </div>
+        </div>
       </div>
-      <div class="flex-group">
-        <span class="group-element group-badge">4★</span>
-        <span class="group-element group-output smaller-text" id="output4star">25</span>
-        <span class="group-element max-lvl-text smaller-text">of which on max lvl</span>
-        <span class="group-element group-output smaller-text" id="max4stars">5</span>
+      <div class="group output-group">
+        <div class="badge">4★</div>
+        <div class="output-inner-group">
+          <span class="output" id="output4star">25</span>
+          <div class="maxlvl-group">
+            <span class="maxlvl">on max lvl:</span>
+            <span class="output" id="max4stars">5</span>
+          </div>
+        </div>
       </div>
-      <div class="flex-group">
-        <span class="group-element group-badge">5★</span>
-        <span class="group-element group-output smaller-text" id="output5star">5</span>
-        <span class="group-element max-lvl-text smaller-text bigger">and your Champion on max lvl</span>
-        <!-- <span class="group-element group-output smaller-text" id="max5stars">0</span> -->
+      <div class="group output-group">
+        <div class="badge">5★</div>
+        <div class="output-inner-group">
+          <span class="output" id="output5star">5</span>
+          <div class="maxlvl-group">
+            <span class="maxlvl max5">your Champion on max lvl</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="center bot">
-      <footer class="smaller-text">
-        by <a href="#">matizBrave</a>
-      </footer>
-    </div>
+
+    <footer>
+      <p>by <a href="https://cwiertniak.com">Cwiertniak</a></p>
+    </footer>
+
   </div>
 
   <script src="app.js"></script>
