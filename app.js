@@ -29,7 +29,6 @@ function calc() {
     if (i === 5) neededStars[i] = i - usersStars[i];
     else { neededStars[i] = neededStars[i + 1] * (i + 1) - usersStars[i]; }
     if (neededStars[i] < 0) neededStars[i] = 0;
-    console.log(neededStars);
     if (i !== 2) {
       document.getElementById(`output${i}star`).innerHTML = neededStars[i];
       document.getElementById(`max${i - 1}stars`).innerHTML = neededStars[i];
